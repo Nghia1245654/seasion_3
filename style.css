@@ -1,28 +1,25 @@
 *{ font-family: "Gilroy", sans-serif;
-}
-* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
-body, html {
-  height: 100%;
-  width: 100%;
-}
-.contanier{
-    position: relative;
+.contanier .content_page_1{
+  position: relative;
   width:100%; 
-  height: 100%; 
+  min-height: 100vh; 
   background: url("imgs/BG.svg") no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   color: white;
 }
-.contanier .overlay {
+.content_page_1 .overlay {
   position: absolute;
   width: 100%;
-  height: 80%;
+  height: 100%;
   background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0));
+  background-size: cover;
   z-index: 1;
 }
 
@@ -116,12 +113,14 @@ opacity: 65%;
  padding-left: 21px;
   gap: 30px;
   font-weight: 700;
+  border: none;
 }
 .footer{
+  margin-top: 150px;
     width: 100%; 
-    min-height: 134px;
-    padding: 150px;
+    max-height: 134px;
   color: black;
+  margin-bottom: 80px;
 }
 .footer .footer-content {
   display: flex;
@@ -207,7 +206,14 @@ margin-bottom: 92px;
   border: #E7E9ED 1px solid;
   align-items: center;
   border-radius: 10px;
+  max-width: 255px;
+ max-height: 226px;
+
 }
+.all_option  .option_4 img{
+  object-fit: cover; 
+}
+
 .option_title{
   font-family: "Gilroy", sans-serif;
   display: flex;
@@ -217,15 +223,16 @@ padding: 22px;
 font-weight: 400;
 
 }
-.page_3{
-  width: 100%;
-  height: 100%;
+.page_3_head{
+  max-width: 1600px;
+  max-height: 849px;
   color: black;
 }
 .page_3_header{
-   width: 769px;
-height: 129px;
- margin: 0 auto;
+   max-width: 769px;
+  min-height: 129px;
+  margin: 0 auto;
+ margin-top: 90px;
   display: flex;
   flex-direction: column;
    text-align: center;
@@ -353,35 +360,20 @@ margin-bottom: 74px;
   display: flex;
   gap: 57px;
 }
-.Testi1 {
-  width: 324px;
-  height: 290px;
+
+.Testi1,.Testi2,.Testi3 {
+   max-width: 324px;
+   max-height: 290px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
 }
-.Testi2 {
-  width: 324px;
-  height: 290px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-}
-.Testi3 {
-  width: 324px;
-  height: 290px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-}
-.Testi1 .Testimonial-Description {
-  width: 324px;
+
+.Testi1 .Testimonial-Description,.Testi2 .Testimonial-Description,.Testi3 .Testimonial-Description {
+  max-width: 324px;
   max-height: 102px;
-  margin: unset;
-  font-family: Gilroy;
+  font-family: "Gilroy", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 34px;
@@ -389,47 +381,30 @@ margin-bottom: 74px;
   text-align: center;
   color: #161c2d;
 }
-.Testi2 .Testimonial-Description {
-  width: 324px;
-  max-height: 102px;
-  margin: unset;
-  font-family: Gilroy;
+.Testimonial h2 {
+  font-family: "Gilroy", sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 34px;
-  letter-spacing: -0.5px;
-  text-align: center;
+  font-size: 17px;
+  line-height: 29px;
+  letter-spacing: -0.2px;
   color: #161c2d;
-}
-.Testi3 .Testimonial-Description {
-  width: 324px;
-  max-height: 102px;
-  margin: unset;
-  font-family: Gilroy;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 34px;
-  letter-spacing: -0.5px;
-  text-align: center;
-  color: #161c2d;
+  max-width: 73px;
+  white-space: nowrap;
 }
 .Job-Title {
   white-space: nowrap;
-  margin: unset;
   display: flex;
   align-items: center;
-  font-family: Gilroy;
+ font-family: "Gilroy", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 26px;
   letter-spacing: -0.1px;
   color: #161c2d;
-  opacity: 0.7;
-  overflow: hidden;
 }
-.Info1 {
-  width: 187.6px;
-  height: 51px;
+.Info1,.Info2,.Info3 {
+  max-width: 189px;
+  max-height: 53px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -442,60 +417,36 @@ margin-bottom: 74px;
   display: flex;
   flex-direction: column;
 }
-.Info2 {
-  width: 187.6px;
-  height: 51px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
+
 .Info2 img {
   width: 65.3px;
   height: 47px;
 }
-.Info3 {
-  width: 187.6px;
-  height: 51px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
+
 .Info3 img {
   width: 65.3px;
   height: 47px;
 }
-.Testimonial h2 {
-  margin: unset;
-  font-family: Gilroy;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 29px;
-  letter-spacing: -0.2px;
-  color: #161c2d;
-  width: 73px;
-  white-space: nowrap;
-}
+
 .page_CTA {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+   width: 100%;
+   min-height: 745px;
   background-color: #161c2d;
-  overflow: hidden;
 }
-.Content_CTA {
+.content_CTA{
   position: relative;
-  max-width: 429px;
-  min-height: 343px;
-  padding-left: 245px;
+  max-width: 1000px;
+  min-height: 499px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   z-index: 1;
 }
 .logo-message {
-  margin: unset;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -506,7 +457,7 @@ margin-bottom: 74px;
   margin-bottom: 46px;
 }
 .CTA-Title {
-  width: 500px;
+  max-width: 500px;
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
@@ -514,7 +465,7 @@ margin-bottom: 74px;
   margin-bottom: 18px;
 }
 .CTA-Description {
-  width: 412px;
+  max-width: 412px;
   font-weight: 400;
   font-size: 19px;
   line-height: 32px;
@@ -533,7 +484,6 @@ margin-bottom: 74px;
 .CTA-Form {
   display: flex;
   flex-direction: column;
-  margin: unset;
   position: relative;
   z-index: 2;
   min-width: 350px;
@@ -541,12 +491,11 @@ margin-bottom: 74px;
   background: #ffffff;
   border: 1px solid #e7e9ed;
   border-radius: 10px;
-  margin-left: 331px;
 }
 
-.CTA-Form .name {
+.CTA-Form .name , .email,
+ .phone, .select-service{
   gap: 7px;
-  margin: unset;
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
@@ -556,24 +505,9 @@ margin-bottom: 74px;
   padding-right: 25px;
   padding-left: 25px;
 }
-.CTA-Form .email,
-.CTA-Form .phone,
-.CTA-Form .select-service {
-  gap: 7px;
-  margin: unset;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
-  width: 300px;
-  height: 78px;
-  padding-right: 25px;
-  padding-left: 25px;
-}
 
 .CTA-Form label {
-  width: 41;
-  height: 26;
-  opacity: 1;
+  font-family: "Gilroy", sans-serif;
   font-family: Gilroy;
   font-weight: 700;
   font-size: 15px;
@@ -624,43 +558,35 @@ margin-bottom: 74px;
 }
 
 .CTA-Form input::placeholder {
-  font-family: Gilroy;
+  font-family: "Gilroy", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 400;
   font-size: 15px;
   line-height: 26px;
   letter-spacing: -0.1px;
-  width: 262;
-  height: 26;
-  top: 12px;
-  left: 18px;
-  opacity: 0.7;
   color: #161c2d;
 }
-.oval-input {
-  width: 300px;
-  height: 50px;
-  opacity: 1;
+.oval-input input {
+  min-width: 300px;
+  min-height: 50px;
   border-radius: 8px;
   border-width: 1px;
-  margin: unset;
   border: 1px solid #e7e9ed;
   background: #ffffff;
 }
 .btn-form {
   width: 300px;
   height: 59px;
-  opacity: 1;
   border-radius: 8px;
   background-color: #473bf0;
   color: #ffffff;
   border: none;
-  font-family: Gilroy;
   font-weight: 700;
   font-size: 17px;
   line-height: 32px;
-  letter-spacing: -0.6px;
   text-align: center;
-  margin: unset;
   margin-top: 10px;
   margin-left: 25px;
   margin-right: 25px;
@@ -687,20 +613,17 @@ margin-bottom: 74px;
   font-size: 32px;
   line-height: 44px;
   color: #161c2d;
-  margin: unset;
-  margin-right: 122px;
+ 
 }
 
-.enter-email input {
-  border: 1px solid #E7E9ED;
+.enter-email input{
   min-width: 290px;
   min-height: 59px;
-  font-weight: 400;
-  font-size: 15px;
-  color: #161c2d;
-  padding: 10px;
-  
-  
+  border-radius: 8px;
+  border-width: 1px;
+  background: #ffffff;
+  border: 1px solid #e7e9ed;
+  margin-right: 20px;
 }
 .btn_subscribe {
   margin-left: 20px;
@@ -714,17 +637,17 @@ margin-bottom: 74px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border: none;
 }
 
 .Footer {
   width: 100%;
   height:auto;
 }
-.footer-bottom  .hr2 {
-  width: 100%;
-  height: 1px;
-  border-width: 1px;
-  border: 1px solid #e7e9ed;
+ .hr2 {
+   max-width: 1111px;
+  margin: 0% auto;
+  border: 2px solid #E7E9ED;
 }
 .List-footer {
   width: 80%;
