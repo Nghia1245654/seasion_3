@@ -542,19 +542,15 @@ margin-bottom: 74px;
   padding-left: 18px;
 }
 .CTA-Form input {
-  width: 262px;
-  height: 26px;
-  opacity: 0.7;
-  font-family: Gilroy;
+  max-width: 262px;
+   max-height: 26px;
   font-weight: 400;
   font-size: 15px;
   line-height: 26px;
   letter-spacing: -0.1px;
   color: #161c2d;
   border: none;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 18px;
+padding: 30px;
 }
 
 .CTA-Form input::placeholder {
@@ -565,10 +561,10 @@ margin-bottom: 74px;
   font-weight: 400;
   font-size: 15px;
   line-height: 26px;
-  letter-spacing: -0.1px;
   color: #161c2d;
+  opacity: 70%;
 }
-.oval-input input {
+.oval-input  {
   min-width: 300px;
   min-height: 50px;
   border-radius: 8px;
@@ -576,6 +572,7 @@ margin-bottom: 74px;
   border: 1px solid #e7e9ed;
   background: #ffffff;
 }
+
 .btn-form {
   width: 300px;
   height: 59px;
@@ -587,7 +584,7 @@ margin-bottom: 74px;
   font-size: 17px;
   line-height: 32px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-left: 25px;
   margin-right: 25px;
   margin-bottom: 28px;
